@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #F3C76F;
+  --color-brand-secondary: #FAE9C5;
+  --color-primary-text: #F1F1F1;
+  --color-primary-background: #2C2C2C;
+  --color-primary-grey: #ABABAB;
+  --color-primary-error: #CF6679;
+  --color-secondary-error: #B54141;
+  --color-disabled: #666666;
+
+  /* --font-poppins-r: Poppins-Regular */
+}
+
+@layer base {
+  /* @font-face {
+    font-family: Inter-Light;
+    src: url("../fonts/Inter-Light.ttf") format('truetype');
+  }
+  @font-face {
+    font-family: Inter-Regular;
+    src: url("../fonts/Inter-Regular.ttf") format('truetype');
+  }
+  @font-face {
+    font-family: Inter-Medium;
+    src: url("../fonts/Inter-Medium.ttf") format('truetype');
+  }
+  @font-face {
+    font-family: Inter-SemiBold;
+    src: url("../fonts/Inter-SemiBold.ttf") format('truetype');
+  }
+  @font-face {
+    font-family: Inter-Bold;
+    src: url("../fonts/Inter-Bold.ttf") format('truetype');
+  }
+  html {
+    @apply bg-brand;
+  } */
+}
+
+@layer components {
+  .container-fluid {
+    @apply w-full mx-auto px-4;
+  }
+  .overlay {
+    @apply fixed inset-0 bg-black/60 z-40;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto px-4 lg:px-6 w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1320px];
+  }
+}
