@@ -27,21 +27,21 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: [[
-    '@pinia/nuxt',
-    {
-      autoImports: [
-        'defineStore',
-        ['defineStore', 'definePiniaStore'],
-      ],
-    },
-  ], [
-    '@nuxtjs/eslint-module', 
-    {
-      failOnError: true,
-      formatter: 'unix',
-    }
-  ], "@nuxt/eslint"],
+  modules: [
+    "@pinia/nuxt",
+    [
+      '@nuxtjs/eslint-module', 
+      {
+        failOnError: true,
+        formatter: 'unix',
+      }
+    ], 
+    "@nuxt/eslint"
+  ],
+
+  pinia: {
+    storesDirs: ["./stores/**"],
+  },
 
   css: ['~/assets/css/main.css'],
 
