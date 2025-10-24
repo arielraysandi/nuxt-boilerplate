@@ -1,1 +1,0 @@
-import{_ as r,y as t,A as l,F as o,G as s,z as a}from"#entry";const u={};function f(n,e){return a(),t(s,null,[e[0]||(e[0]=l("header",null,null,-1)),o(n.$slots,"default"),e[1]||(e[1]=l("footer",null,null,-1))],64)}const m=r(u,[["render",f]]);export{m as default};
