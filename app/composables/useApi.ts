@@ -27,7 +27,6 @@ export const useApi = defineStore("api", () => {
     
     axios.defaults.headers.common["Accept"] = "application/json";
     axios.defaults.headers.common["Content-Type"] = "application/json";
-    // axios.defaults.headers.common["x-holywings-token"] = config.public.hwToken;
 
     // const token = route.query.token?.toString() || useUserData().value.token;
     // if (token) {
